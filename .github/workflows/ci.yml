@@ -21,3 +21,4 @@ jobs:
       run: node_modules/sfdx-cli/bin/run force:apex:test:run --codecoverage --resultformat human
     - name: Delete Scratch Org
       run: node_modules/sfdx-cli/bin/run force:org:delete --noprompt
+    

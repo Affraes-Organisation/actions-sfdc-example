@@ -1,5 +1,10 @@
 {
-  "orgName": "Demo company",
+  "orgName": "jefersonschaves Company",
   "edition": "Developer",
-  "features": []
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
 }
