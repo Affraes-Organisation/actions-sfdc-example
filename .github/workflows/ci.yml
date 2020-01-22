@@ -3,7 +3,7 @@ name: SFDC DX CI
 on: [push]
 
 jobs:
-  SFDC DX Build and Test:
+  SFDC_DX_Build_and_Test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
