@@ -38,11 +38,11 @@ This copy of the repository has protected branches turned on, `master`can only b
 - Clone the mirrored repository
 - Open the root folder of the repository in VSCode
 
-##### Test your connection with SFDX, by doing the following in VSCode:
+##### Test your connection with SFDX from VSCode, by doing the following in VSCode:
 To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
   - Authorize an Organization
-    - Type `SFDX: Authorize an Org`.
-    - To accept the default login URL, press Enter.
+    - Type `SFDX: Authorize an Org` and select that command.
+    - To accept the default login URL, press Enter/Return.
     - Enter an alias such as `VSCodePlayground`.
     - Notice that your default browser opens a new Salesforce login window. Log in to your playground using your Developer Account username and password.
     - When you are asked to grant access to the connected app, click to allow:
@@ -51,6 +51,20 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
     - You should see a success message in the output panel in VSCode:
 ![Hooray!](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce/images/e79231bf40a1e2a893b8b22f1c72774b_cjptzm-677000-g-0-s-89-iyreg-3-fa.png)
 
+  - Create a Scratch Org to run a test.
+    - Type `SFDX: Create a Default Scratch Org` and select that command.
+    - To accept the defaults, press Enter/Return. The only default you may want to consider is the life of the Scratch Org (in Days) The default is 7, but you may prefer less.
+    - check for a `exit 0` success status in the output panel in VSCode
+    - The system will now use this created Scratch Org to push code to to run tests.
+
+  - Push the Code into the Default Scratch Org.
+    - Type `SFDX: Push Source to Default Scratch Org` and select that command.
+    - To accept the defaults, press Enter/Return.
+    - check for a `exit 0` success status in the output panel in VSCode
+
+  - Run the test.
+    - Type `SFDX: Invoke Apex Tests` and select that command.
+    - check for a `exit 0` success status in the output panel in VSCode
 
 ##### Secrets you will need
 
