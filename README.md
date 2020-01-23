@@ -71,19 +71,28 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
 
 </details>
 
-  - Push the Code into the Default Scratch Org.
-    - Type `SFDX: Push Source to Default Scratch Org` and select that command.
-    - To choose a specific .
-    - check for a `exit 0` success status in the output panel in VSCode
+<details><summary>Push the Code into the Default Scratch Org.</summary>
 
-  - Run the test.
-    - Type `SFDX: Invoke Apex Tests` and select that command.
-    - check for a `exit 0` success status in the output panel in VSCode
+- Type `SFDX: Push Source to Default Scratch Org` and select that command.
+- To choose a specific .
+- check for a `exit 0` success status in the output panel in VSCode
 
-  - (Optional) Delete the Scratch Org.
-    - The Org will auto delete after the number of days you picked for teh life of the Scratch Org when creating it.
-    - There is no built in SFDX command to do this in the Supplied VSCode Salesforce Extension commands, however, if you head to the terminal panel in VSCode, you can issue the command `sfdx force:org:delete`
-    - Confirm that you want to mark the Scratch Org for deletion by entering `y` at the prompt
+</details>
+
+<details><summary>Run the test.</summary>
+
+- Type `SFDX: Invoke Apex Tests` and select that command.
+- check for a `exit 0` success status in the output panel in VSCode
+
+</details>
+
+<details><summary>(Optional) Delete the Scratch Org.</summary>
+
+- The Org will auto delete after the number of days you picked for teh life of the Scratch Org when creating it.
+- There is no built in SFDX command to do this in the Supplied VSCode Salesforce Extension commands, however, if you head to the terminal panel in VSCode, you can issue the command `sfdx force:org:delete`
+- Confirm that you want to mark the Scratch Org for deletion by entering `y` at the prompt
+
+</details>
 
 ##### Secrets you will need
 
