@@ -3,7 +3,7 @@ Playground to try-out SFDX with Github Actions
 
 ### Protected Branches
 
-Protected Branches are now turned on, `master`can only be pushed/merged upon a successful CI run.
+Protected Branches are now turned on, `master`can only be pushed/merged to upon a successful CI run.
 
 ## How to get going
 
@@ -15,6 +15,6 @@ Protected Branches are now turned on, `master`can only be pushed/merged upon a s
 
 ## Secrets you will need
 
-- **SALESFORCE_DEVHUB_USERNAME**: The username you obtained when you created your SFDC Developer Account
+- **SALESFORCE_DEVHUB_USERNAME**: The username you obtained when you [created your SFDC Developer Account](#getting-a-suitable-sfdc-dx-developer-account)
 - **SALESFORCE_CONSUMER_KEY**: The Consumer Key you generated and noted when you created an App on SFDC
 - **SALESFORCE_JWT_SECRET_KEY**: The contents of your `server.key` file you created when cerating your self signed certificate, above.
