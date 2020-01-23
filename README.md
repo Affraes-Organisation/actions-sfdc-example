@@ -59,12 +59,18 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
 
   - Push the Code into the Default Scratch Org.
     - Type `SFDX: Push Source to Default Scratch Org` and select that command.
-    - To accept the defaults, press Enter/Return.
+    - To choose a specific .
     - check for a `exit 0` success status in the output panel in VSCode
 
   - Run the test.
     - Type `SFDX: Invoke Apex Tests` and select that command.
     - check for a `exit 0` success status in the output panel in VSCode
+
+  - (Optional) Delete the Scratch Org.
+    - The Org will auto delete after the number of days you picked for teh life of the Scratch Org when creating it.
+    - There is no built in SFDX command to do this in the Supplied VSCode Salesforce Extension commands, however, if you head to the terminal panel in VSCode, you can issue the command `sfdx force:org:delete`
+    - Confirm that you want to mark the Scratch Org for deletion by entering `y` at the prompt
+    -
 
 ##### Secrets you will need
 
