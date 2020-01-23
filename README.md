@@ -45,8 +45,9 @@ This copy of the repository has protected branches turned on, `master`can only b
 - Clone the mirrored repository
 - Open the root folder of the repository in VSCode
 
-#### Test your connection with SFDX from VSCode, by doing the following in VSCode:
-To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
+#### Test your connection with SFDX from VSCode
+
+To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
 
 <details><summary>Authorize an Organization</summary>
 
@@ -74,7 +75,6 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
 <details><summary>Push the Code into the Default Scratch Org.</summary>
 
 - Type `SFDX: Push Source to Default Scratch Org` and select that command.
-- To choose a specific .
 - check for a `exit 0` success status in the output panel in VSCode
 
 </details>
@@ -82,6 +82,7 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
 <details><summary>Run the test.</summary>
 
 - Type `SFDX: Invoke Apex Tests` and select that command.
+- You can choose a specific test class or run them all.
 - check for a `exit 0` success status in the output panel in VSCode
 
 </details>
@@ -94,10 +95,60 @@ To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P 
 
 </details>
 
-##### Secrets you will need
+#### Finish repository setup
+
+
+<details><summary>Set up the secrets you will need</summary>
 
 Create the following secrets in your copy of the repository:
 
 - `SALESFORCE_DEVHUB_USERNAME`: The username you obtained when you [created your SFDC Developer Account](#getting-a-suitable-sfdc-dx-developer-account)
 - `SALESFORCE_JWT_SECRET_KEY`: The contents of your `server.key` file you created when [creating your self signed certificate](#create-a-self-signed-certificate), noted above.
 - `SALESFORCE_CONSUMER_KEY`: The Consumer Key you generated and noted when you [created an App in SFDC](#create-an-app-in-sfdx).
+
+</details>
+
+<details><summary>Trigger a CI Build</summary>
+
+Trigger a CI build so we get a `SFDC_DX_Build_and_Test` Status Check checkbox to select when we setup up Protected Branches:
+
+- `SALESFORCE_DEVHUB_USERNAME`: The username you obtained when you [created your SFDC Developer Account](#getting-a-suitable-sfdc-dx-developer-account)
+- `SALESFORCE_JWT_SECRET_KEY`: The contents of your `server.key` file you created when [creating your self signed certificate](#create-a-self-signed-certificate), noted above.
+- `SALESFORCE_CONSUMER_KEY`: The Consumer Key you generated and noted when you [created an App in SFDC](#create-an-app-in-sfdx).
+
+</details>
+
+<details><summary>Protect the Master Branch</summary>
+
+Set up `master` as a protected branch:
+- [x] Require status checks to pass before merging
+- [x] Require branches to be up to date before merging
+- Status checks found in the last week for this repository:
+
+  - [x] SFDC_DX_Build_and_Test
+- [x] Include administrators
+
+</details>
+
+#### Demo
+In GitHub Web UI:
+- Create a new branch
+- Make a change to `force-app/main/default/classes/HelloWorld.cls` that will break the test `force-app/main/default/classes/HelloWorldTest.cls`
+- Commit the change
+- Open a PR to merge that branch into `master`
+- Observe and show CI results (should fail at the `Run Apex test` step in the `SFDC_DX_Build_and_Test` job in `.github/wortflows/ci.yml`)
+- Observe PR will not allow merge to master.
+
+In VSCode:
+- Pull and fetch to update the local copy of the repository
+- Switch to the PR branch created :point_up_2:
+- Make the change to `force-app/main/default/classes/HelloWorld.cls` that will fix the test `force-app/main/default/classes/HelloWorldTest.cls`
+- Commit the change
+- Push to Github
+
+In GitHub Web UI:
+- Go to the PR
+- Observe and show CI results (should now pass the `SFDC_DX_Build_and_Test` job in `.github/wortflows/ci.yml`)
+- Observe PR will now allow merge to master.
+- Merge
+- Delete your PR branch both on GitHub and in your local copy
