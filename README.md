@@ -143,6 +143,7 @@ In VSCode:
 - Pull and fetch to update the local copy of the repository
 - Switch to the PR branch created :point_up_2:
 - Make the change to `force-app/main/default/classes/HelloWorld.cls` that will fix the test `force-app/main/default/classes/HelloWorldTest.cls`
+- (Optional) perform a local test using the steps followed in [Test your connection with SFDX from VSCode](#test-your-connection-with-sfdx-from-vscode)
 - Commit the change
 - Push to Github
 
