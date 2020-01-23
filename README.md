@@ -10,7 +10,10 @@ This copy of the repository has protected branches turned on, `master`can only b
 ### How to get going
 
 #### Visual Studio Code
-
+- Obtain and install the latest version of [Visual Studio Code](https://code.visualstudio.com/)
+- If you don’t already have version 8 or 11 of the JDK installed, you can install the latest version of the Java 8 JDK from [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the latest version of the Java 11 JDK from [Java SE Development Kit 11 Downloads](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html).
+- [Install the Salesforce CLI tools](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm) and the [Salesforce Extension Pack for VSCode](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode).
+- In a terminal window, run `sfdx update` to update the tools. The packaged tools had a problem when I orginally installed them that was fixed by running the `sfdx update` command
 
 #### SFDX
 
@@ -33,7 +36,9 @@ This copy of the repository has protected branches turned on, `master`can only b
 
 - [Mirror the repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
 - Clone the mirrored repository
-- Open the root of the repository in VSCode
+- Open the root folder of the repository in VSCode
+- Test your connection with SFDX:
+  -
 
 ##### Secrets you will need
 
