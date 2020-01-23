@@ -1,4 +1,6 @@
-# SFDX GitHub Actions ![Build Status](https://github.com/jefersonchaves/sfdxgithubactions/workflows/CI/badge.svg)
+Workflow courtesy of https://github.com/jefersonchaves/sfdxgithubactions
+
+# SFDX GitHub Actions ![Build Status](https://github.com/Affraes-Organisation/actions-sfdc-example/workflows/CI/badge.svg)
 Playground to try-out SFDX with Github Actions
 
 ### Protected Branches
