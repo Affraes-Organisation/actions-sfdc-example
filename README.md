@@ -37,8 +37,20 @@ This copy of the repository has protected branches turned on, `master`can only b
 - [Mirror the repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
 - Clone the mirrored repository
 - Open the root folder of the repository in VSCode
-- Test your connection with SFDX:
-  -
+
+##### Test your connection with SFDX, by doing the following in VSCode:
+To issue commands, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
+  - Authorize an Organization
+    - Type `SFDX: Authorize an Org`.
+    - To accept the default login URL, press Enter.
+    - Enter an alias such as `VSCodePlayground`.
+    - Notice that your default browser opens a new Salesforce login window. Log in to your playground using your Developer Account username and password.
+    - When you are asked to grant access to the connected app, click to allow:
+![Allow?](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce/images/35b7e9cde25290c50977ea8932aa92c3_cjptzm-674000-f-0-s-89846-lck-3-l.png)   
+    - Close the browser window
+    - You should see a success message in the output panel in VSCode:
+![Hooray!](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/quickstart-vscode-salesforce/use-vscode-for-salesforce/images/e79231bf40a1e2a893b8b22f1c72774b_cjptzm-677000-g-0-s-89-iyreg-3-fa.png)
+
 
 ##### Secrets you will need
 
