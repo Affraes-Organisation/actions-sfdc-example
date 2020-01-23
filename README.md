@@ -136,8 +136,8 @@ In GitHub Web UI:
 - Make a change to `force-app/main/default/classes/HelloWorld.cls` that will break the test `force-app/main/default/classes/HelloWorldTest.cls`
 - Commit the change
 - Open a PR to merge that branch into `master`
-- Observe and show CI results (should fail at the `Run Apex test` step in the `SFDC_DX_Build_and_Test` job in `.github/wortflows/ci.yml`)
-- Observe PR will not allow merge to master.
+- Observe and show CI results (should fail at the `Run Apex test` step in the `SFDC_DX_Build_and_Test` job in `.github/workflows/ci.yml`)
+- Observe PR will not allow merge to `master`.
 
 In VSCode:
 - Pull and fetch to update the local copy of the repository
@@ -149,7 +149,7 @@ In VSCode:
 
 In GitHub Web UI:
 - Go to the PR
-- Observe and show CI results (should now pass the `SFDC_DX_Build_and_Test` job in `.github/wortflows/ci.yml`)
-- Observe PR will now allow merge to master.
+- Observe and show CI results (should now pass the `SFDC_DX_Build_and_Test` job in `.github/workflows/ci.yml`)
+- Observe PR will now allow merge to `master`.
 - Merge
 - Delete your PR branch both on GitHub and in your local copy
