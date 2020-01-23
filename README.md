@@ -5,6 +5,8 @@ Playground to try-out SFDX with Github Actions
 
 This copy of the repository has protected branches turned on, `master`can only be pushed/merged to upon a successful CI run.
 
+:construction: **The following is WORK IN PROGRESS** :construction:
+
 ### How to get going
 
 #### Visual Studio Code
