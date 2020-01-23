@@ -9,7 +9,7 @@ Protected Branches are now turned on, `master`can only be pushed/merged to upon 
 
 ### Getting a suitable SFDC DX Developer Account
 
-- Sign up for a SFDC Developer Account at https://developer.salesforce.com/promotions/orgs/dx-signup
+- [Sign up](https://developer.salesforce.com/promotions/orgs/dx-signup) for a SFDC Developer Account 
 - Note your username for use later in a GitHub Secret
 
 
