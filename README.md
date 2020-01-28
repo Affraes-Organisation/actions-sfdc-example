@@ -96,7 +96,7 @@ To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + 
 
 <details><summary>(Optional) Delete the Scratch Org.</summary>
 
-- The Org will auto delete after the number of days you picked for teh life of the Scratch Org when creating it.
+- The Org will auto delete after the number of days you picked for the life of the Scratch Org when creating it.
 - There is no built in SFDX command to do this in the Supplied VSCode Salesforce Extension commands, however, if you head to the terminal panel in VSCode, you can issue the command `sfdx force:org:delete`
 - Confirm that you want to mark the Scratch Org for deletion by entering `y` at the prompt
 
