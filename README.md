@@ -117,7 +117,7 @@ Create the following secrets in your copy of the repository:
 
 <details><summary>Trigger a CI Build</summary>
 
-Trigger a CI build so we get a `SFDC_DX_Build_and_Test` Status Check checkbox to select when we setup up Protected Branches.
+- Trigger a CI build so we get a `SFDC_DX_Build_and_Test` Status Check checkbox to select when we setup up Protected Branches.
 
 </details>
 
