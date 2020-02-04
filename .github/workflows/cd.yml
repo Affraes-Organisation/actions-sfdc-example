@@ -4,9 +4,9 @@ on:
   # Trigger the workflow on push,
   # but only for the master branch
   push:
-#    branches:
-#      - master
-#
+    branches:
+      - master
+
 
 jobs:
   SFDC_DX_Deploy:
