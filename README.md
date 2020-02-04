@@ -155,4 +155,5 @@ In GitHub Web UI:
 - Observe and show CI results (should now pass the `SFDC_DX_Build_and_Test` job in `.github/workflows/ci.yml`)
 - Observe PR will now allow merge to `master`.
 - Merge
-- Delete your PR branch both on GitHub and in your local copy
+- Go to the Actions Tab - note that the `SFDC DX CD` Action is now running to deploy the code.
+- (Optional) Delete your PR branch both on GitHub and in your local copy
