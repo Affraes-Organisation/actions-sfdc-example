@@ -1,0 +1,25 @@
+name: SFDC DX CD
+
+on:
+  # Trigger the workflow on push,
+  # but only for the master branch
+  push:
+    branches:
+      - master
+
+
+jobs:
+  SFDC_DX_Deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Dependencies
+      run: npm install sfdx-cli
+    - name: Authenticate DevHub
+      run: |
+        echo "${{ secrets.SALESFORCE_JWT_SECRET_KEY }}" > server.key
+        node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid ${{ secrets.SALESFORCE_CONSUMER_KEY }} --jwtkeyfile server.key --username ${{ secrets.SALESFORCE_DEVHUB_USERNAME}} --setdefaultdevhubusername --setalias devhub
+    - name: Convert files from source format to metadata format
+      run: node_modules/sfdx-cli/bin/run force:source:convert -r force-app -d devhub
+    - name: Deploy Code
+      run: node_modules/sfdx-cli/bin/run force:mdapi:deploy -d devhub/ -u devhub -w 2
