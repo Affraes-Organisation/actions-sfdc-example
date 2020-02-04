@@ -1,8 +1,11 @@
 name: SFDC DX CD
 
-on: [push]
-  branches:
-        - master
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
 
 jobs:
   SFDC_DX_Deploy:
