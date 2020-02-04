@@ -20,6 +20,5 @@ jobs:
         node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid ${{ secrets.SALESFORCE_CONSUMER_KEY }} --jwtkeyfile server.key --username ${{ secrets.SALESFORCE_DEVHUB_USERNAME}} --setdefaultdevhubusername --setalias devhub
     - name: Convert files from source format to metadata format
       run: node_modules/sfdx-cli/bin/run force:source:convert -r force-app -d testDeploy
-
-# - name: Deploy Code
-# run: node_modules/sfdx-cli/bin/run force:mdapi:deploy -d testDeploy/ -u deploy -w 2
+    - name: Deploy Code
+    run: node_modules/sfdx-cli/bin/run force:mdapi:deploy -d testDeploy/ -u deploy -w 2
