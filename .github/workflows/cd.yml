@@ -1,6 +1,8 @@
 name: SFDC DX CD
 
 on: [push]
+branches:
+      - master
 
 jobs:
   SFDC_DX_Deploy:
