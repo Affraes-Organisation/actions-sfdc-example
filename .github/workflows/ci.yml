@@ -1,6 +1,12 @@
 name: SFDC DX CI
 
-on: [push]
+on:
+  # Trigger the workflow on push,
+  # but NOT for the master branch
+  push:
+    branches-ignore:
+      - master
+
 
 jobs:
   SFDC_DX_Build_and_Test:
