@@ -150,6 +150,14 @@ In VSCode:
 - Commit the change
 - Push to Github
 
+To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
+- Type `SFDX: Open Default Org` and select that command.
+- This will take you to SFDC
+- Select Setup from the Settings Menu in the top right corner of the web page
+- This will take you to the Home Page of the Set up app. You may see your classes in the "Most Recemtly Used" section on the page, or you can use the Search box in the left column to search for "Apex Classes"
+  - Either way show the updated code of the HelloWorld and HelloWorldTest classes.
+  - If the Classes do not appear to exist that is ok, it is likely you have n ot deplioyed to this org yet. Point this out.
+
 In GitHub Web UI:
 - Go to the PR
 - Observe and show CI results (should now pass the `SFDC_DX_Build_and_Test` job in `.github/workflows/ci.yml`)
@@ -157,3 +165,13 @@ In GitHub Web UI:
 - Merge
 - Go to the Actions Tab - note that the `SFDC DX CD` Action is now running to deploy the code.
 - (Optional) Delete your PR branch both on GitHub and in your local copy
+
+In VSCode:
+
+To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
+- Type `SFDX: Open Default Org` and select that command.
+- This will take you to SFDC
+- Select Setup from the Settings Menu in the top right corner of the web page
+- This will take you to the Home Page of the Set up app. You may see your classes in the "Most Recemtly Used" section on the page, or you can use the Search box in the left column to search for "Apex Classes"
+  - Either way show the updated code of the HelloWorld and HelloWorldTest classes.
+
