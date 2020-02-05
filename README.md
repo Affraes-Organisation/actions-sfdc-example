@@ -146,12 +146,12 @@ In VSCode:
 
 To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + Shift + P on Windows to make the command palette appear.
 - Type `SFDX: Open Default Org` and select that command.
-- This will take you to SFDC
+- This will take you to SFDC in your web browser
 - Select Setup from the Settings Menu in the top right corner of the web page
 - This will take you to the Home Page of the Set up app. You may see your classes in the "Most Recemtly Used" section on the page, or you can use the Search box in the left column to search for "Apex Classes"
   - Either way show the updated code of the HelloWorld and HelloWorldTest classes.
   - If the Classes do not appear to exist that is ok, it is likely you have not deployed to this org yet. Point this out.
-  
+- Switch back to VSCode  
 - Pull and fetch to update the local copy of the repository
 - Switch to the PR branch created :point_up_2:
 - Make the change to `force-app/main/default/classes/HelloWorld.cls` that will fix the test `force-app/main/default/classes/HelloWorldTest.cls`
