@@ -156,7 +156,7 @@ To issue commands in VSCode, you can press Command + Shift + P on Mac or Ctrl + 
 - Select Setup from the Settings Menu in the top right corner of the web page
 - This will take you to the Home Page of the Set up app. You may see your classes in the "Most Recemtly Used" section on the page, or you can use the Search box in the left column to search for "Apex Classes"
   - Either way show the updated code of the HelloWorld and HelloWorldTest classes.
-  - If the Classes do not appear to exist that is ok, it is likely you have n ot deplioyed to this org yet. Point this out.
+  - If the Classes do not appear to exist that is ok, it is likely you have not deployed to this org yet. Point this out.
 
 In GitHub Web UI:
 - Go to the PR
