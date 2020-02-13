@@ -1,6 +1,6 @@
 Workflow courtesy of https://github.com/jefersonchaves/sfdxgithubactions
 
-#### SFDX GitHub Actions
+#### SFDX DC CLI GitHub Actions
 ![SFDC DX CI](https://github.com/Affraes-Organisation/actions-sfdc-example/workflows/SFDC%20DX%20CI/badge.svg) ![SFDC DX CD](https://github.com/Affraes-Organisation/actions-sfdc-example/workflows/SFDC%20DX%20CD/badge.svg)
 
 Playground to try-out SFDX with Github Actions
